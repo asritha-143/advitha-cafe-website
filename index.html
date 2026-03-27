@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advitha Café</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+    <button onclick="toggleDarkMode()" class="dark-btn">🌙</button>
+    <h1>Advitha Café</h1>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#menu">Menu</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<!-- HERO -->
+<section id="home" class="hero">
+    <h2>More Than a Café</h2>
+    <p>Experience creativity, fun, and flavors in one place</p>
+    <button onclick="scrollToMenu()">Explore Menu</button>
+</section>
+
+<!-- MENU -->
+<section id="menu" class="menu">
+    <h2>Our Specials</h2>
+
+    <div class="menu-container">
+        <div class="menu-card">
+            <h3>Pedal Juice</h3>
+            <p>₹180</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Cold Coffee</h3>
+            <p>₹150</p>
+        </div>
+
+        <div class="menu-card">
+            <h3>Veg Sandwich</h3>
+            <p>₹120</p>
+        </div>
+    </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="about">
+    <h2>Why Advitha?</h2>
+    <p>We bring together food, creativity, and experiences. From pedal-powered juices to interactive fun, we redefine café culture.</p>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name"><br>
+        <input type="email" id="email" placeholder="Your Email"><br>
+        <textarea id="message" placeholder="Message"></textarea><br>
+        <button type="submit">Send</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Advitha Café | Designed with passion</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
